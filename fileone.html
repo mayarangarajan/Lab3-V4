@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Accuracy Game</title>
+    <link rel="stylesheet" href="filethree.css">
+</head>
+
+<body>
+    <div id="gameContainer">
+
+        <!-- Game Time Input -->
+        <label for="gameTimeInput">Set Game Time (in seconds): </label>
+        <input type="number" id="gameTimeInput" min="1" value="30" class="border p-1 mb-2"> <!-- Input field for game time -->
+
+        <!-- Start Button -->
+        <button id="startGame">Start</button>
+
+        <!-- Timer Display -->
+        <div id="timerDisplay" class="text-xl mt-4">Time left: 30s</div>
+
+        <!-- Game Area -->
+        <div id="gameArea" class="relative w-full h-[600px] bg-gray-200 rounded-md shadow-md"></div>
+
+        <!-- Scoreboard -->
+        <div id="scoreboard" class="mt-4 hidden p-4 bg-white rounded shadow-md">
+            <h2 class="text-xl font-bold text-center mb-4">Scoreboard</h2>
+            <p id="totalTargets" class="text-lg">Total targets: 0</p>
+            <p id="targetsClicked" class="text-lg">Targets clicked: 0</p>
+            <p id='missedTargets' class="text-lg">Missed targets: 0</p>
+            <p id="finalScore" class="text-lg">Final score: 0</p>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="filetwo.js"></script>
+
+    <!-- Unocss Runtime (if needed) -->
+    <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime/attributify.global.js"></script>
+</body>
+
+</html>
